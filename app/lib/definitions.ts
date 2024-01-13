@@ -86,3 +86,23 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+
+//¡Aqui van mis campos nuevos!
+export type Neighbor = {
+  id: string;
+  name: string;
+  email: string;
+  image_url: string;
+  type: 'president' | 'neighbor';
+};
+
+export type Comunity = {
+  id: string;
+  name: string;
+  president: Neighbor;
+  members: Neighbor[];
+};
+
+
+
